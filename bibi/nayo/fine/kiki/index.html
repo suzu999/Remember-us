@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>KiKi</title>
+
+    	<link href="@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');">
+
+	<style type="text/css">
+		link href="@font-face {
+    				font-family: 'SangSangShinb7';
+    				src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+   					font-weight: normal; font-style: normal;}
+
+   		body{
+   			margin:0;
+   			background: black;
+   		}
+
+   		a{
+			font-size: 40px;
+			color: white;
+			display: inline-block;
+				color:white;
+     		 padding:10px 20px 10px 20px;
+     		 margin:20px;
+      		display:inline-block;
+      		border: 10px;
+      		border-style: solid;
+      		border-color: white;
+
+		}
+			
+
+		a:hover{ 
+			color: #00E35A;
+			transition: all 0.3s;
+		}
+
+		section{
+			width: 1720px;
+		}
+
+		body{
+			margin:0;
+			background: black; 
+			width: 1720px;
+		}
+
+		section{
+			width: 1720px;
+		}
+
+		a,h3{
+			font-family: 'SangSangShinb7', sans-serif;
+		}
+
+		body, h1, h2, p, div, ul, li{
+			font-family: NanumSquare, sans-serif; margin: 0; padding: 0;
+		}
+
+		h2{ 
+			font-size: 40px; 
+			margin-top: 30px; 
+			line-height: 55px;
+		}
+
+		h3{
+			font-size: 35px; 
+			margin-top: 30px; 
+			line-height: 55px;
+		}
+
+		p{
+			font-size: 24px;  
+			margin-top: 30px; 
+			line-height: 40px;
+		}
+
+		header{
+			height: 60px;
+		}
+
+		nav{
+			float: right;
+			padding-right: 50px;
+		}
+
+		div{
+			margin: 0px; 
+			padding: 0px; 
+			color: none;
+		}	
+
+		.button{
+			text-decoration: none;
+      		font-size:50px;
+      		color:white;
+     		 padding:10px 20px 10px 20px;
+     		 margin:20px;
+      		display:inline-block;
+      		border: 10px;
+      		border-style: none;
+      		border-color: white;
+    
+		}
+	
+		.row{
+			width: 1200px; 
+			margin: auto;
+		}
+	
+		
+		.section-about{
+			width: 1200px; 
+			margin: auto; 
+			height: 600px; 
+			padding: 0px 0px;
+		}
+
+		.section-user{
+			width: 1200px; 
+			margin: auto; 
+			height: 400px; 
+			display: flex; 
+			padding: 0px 0px; 
+			margin-top: 100px;
+		}
+
+		.section-top{
+			height: 1300px;
+		}
+
+		.section-back{
+			width: 1400px;
+		}
+
+		.secion-end{
+			margin: 0px; 
+			padding: 0px;
+			height: 40px;
+		}
+
+		.section-img{
+			width: 100vw; 
+			height: 220vh;
+			background: none;
+		}
+
+		.section-img1{
+			width: 10vw; 
+			height: 100vh;
+			background: none;
+		}
+
+		.section-black{
+			width: 100vw; 
+			height: 25vh;
+			background: black;
+		}
+
+		.section-gradient{
+			width: 100vw; 
+			height: 60vh; 
+			background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 49%, rgba(0,0,0,0) 100%);
+		}
+
+		.col-6{
+			width: 1190px; 
+			background: black;
+			margin: 0px 5px;
+		}
+
+		.text-white{
+			color: white;
+		}
+
+		.text-gray{
+			color: lightgray;
+		}
+
+		.text-center{
+			text-align: center;
+		}
+
+		.user1-img-size{
+			display: block; width: 230px; margin: auto;
+		}
+
+	
+		.color-overlay-bottom{
+			width: 1720px;
+			height: 100%;
+			background:  linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(lovedive/ground-light.jpg);background-repeat: no-repeat;
+		}
+
+		.color-overlay-top{
+			width: 1720px;
+			height: 100%;
+			background:  linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0)), url(lovedive/ground-light.jpg);background-repeat: no-repeat;
+		}
+
+		
+
+
+	
+       	.back {
+       		background: url('road.jpg');
+            width:1720px;
+            background-position: center;
+            background-size: 100% auto;
+            background-attachment: fixed; 
+        }
+
+
+
+       	.back1 {
+       		background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%), url(road-grayscale.jpg);
+			width: 1720px;
+			height: 2000px;
+			background-position: center;
+			background-size: 100% auto;
+			background-attachment: fixed;
+        }
+
+        .home{
+        	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%), url(home.jpg);
+			width: 1720px;
+			height: 2000px;
+			background-position: center;
+			background-size: 100% auto;
+			background-attachment: fixed;
+
+
+        }
+                
+	
+
+        .back-open-eye {
+        	background: url('open-eye.jpg');
+            width: 1720px;
+            background-position: center;
+            background-attachment: fixed;
+        	background-size: 600px;
+        	background-repeat: no-repeat; 
+        }
+
+        .back-close-eye {
+        	background: url('close-eye.jpg');
+            width: 1720px;
+            background-position: center;
+            background-attachment: fixed;
+        	background-size: 600px;
+        	background-repeat: no-repeat; 
+        }
+        	
+
+        .end {
+        	width: 1720px; 
+        	height: 100px;
+        }
+
+        .lb-wrap {
+  			width: 50%;
+  			margin: 10px auto;
+  			position: relative;
+		}
+
+		.lb-wrap img {
+  			width: 1720px;
+  			margin-left: -300px;
+
+		}
+
+		.lb-text {
+  			padding: 10px 20px;
+  			border-radius: 10px;
+  			text-align: center;
+  			position: absolute;
+  			margin-left: -310px;
+ 			top: 45%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+		}
+
+
+		#back-ground-grayscale{
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background: linear-gradient(to top, rgba(0, 0, 0, 1) 31%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1)), url(ground.jpg);
+
+		}
+
+
+
+
+
+
+	</style>
+	</head>
+
+
+ 
+	<body>
+	<section class="section-about back-open-eye" style="margin-top: 100px;">
+	</section>
+ 
+	<section class="section-about" style="margin-top: 20px;">
+		<div class="row">
+			<div class="col-6 text-white" >
+				<h3 class="text-white text-center" style="font-size: 3em; line-height: 80px;">준비되셨다면 <br>가장 즐거웠던 길을 떠올려 보세요.</h3>
+			</div>
+		</div> 
+	</section>
+
+
+	<section class="section-about back-close-eye">
+	</section>
+ 
+	<section class="section-about">
+		<div class="row">
+			<div class="col-6 text-white" >
+				<h3 class="text-white text-center" style="font-size: 3em; line-height: 100px;">즐거운 길은 어떤 모양일까요?</h3>
+			</div>
+		</div> 
+	</section>
+
+
+	<section class="end">
+		<div>
+			<img src="end.svg" style=" width: 1720px; margin-top: 0px;">
+		</div>
+	</section>
+
+ 
+	<section class="section-img back">
+	    	<div class="color-overlay-bottom" >
+	    	</div>	
+	</section>
+
+    <section >
+    	<div class="row" >
+    		<div class="col-6 text-white" >
+				<p class="text-white text-center small">
+					따뜻하고 한가해 보이는 이 길은 어린시절 매일 뛰어다니던 동네 골목이군요!<br>
+					구불구불 먼길도 한걸음에 뛰어 넘었던 어린이들의 모습이 겹쳐보이네요.<br>
+					아마 우리 모두의 모습일거에요.<br>
+					사실 모든 곳이 놀이터처럼 느껴졌던 이유는 새롭게 만날 친구 덕분일까요?<br> <br>그런데 갑자기 길이 이상해요!
+			</div>
+    	</div>
+   	</section>
+
+
+    <section class="section-img back1" >
+    	<div id="back-ground-grayscale" >
+		</div>
+		<div style="margin-top:-1200px;">
+			<img src="jelly.svg">
+		</div>
+
+	</section>
+
+	<section class="home">
+	</section>
+	
+
+
+	<section class="row" style="width: 1720px; margin-top: -1500px;">
+
+		<div style="position: absolute;">
+				<img src="kiki-text.svg" style="width: 620px; margin-left: 100px; margin-top:500px;">
+			</div>
+
+			<div style="position: absolute; margin-left: 650px; margin-top: -650px;">
+				<img src="kiki-1.svg" style="width: 600px; margin-left: 200px;margin-top: 900px;filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+			</div>
+
+
+			<div style="position: absolute;">
+					<img src="kiki-2.svg" style="width: 600px; margin-left: 100px; margin-top: 1100px;filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+			</div>
+
+			<div style="position:absolute;">
+						<img src="voice-img.svg" style="width: 700px; margin-left: 820px; margin-top: 1620px; filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+			</div>
+	<!--
+		<div class="row" style="position: absolute; margin-top: 300px; margin-left: 900px;">
+				<h3 style="margin-top:40vh; font-size: 3em; color: #FF86FF; line-height: 80px;">우리 함께 놀이터를 점령하던 용감무쌍한 <br>날들이 생각나서 찾아오셨나요?</h3>
+	
+		</div>
+		
+
+			<div style="position: absolute;">
+				<img src="voice-bibi-1.svg" style="width: 620px; margin-top: 700px;margin-left: 900px;filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+			</div>-->
+
+		
+			<div>
+					<img src="kiki-grass.svg" style="width:1720px; margin-top: 500px;">
+			</div>
+
+
+			<div class="row" style="position: absolute; margin-left: 850px;">
+					<h3 style="margin-top:20vh; font-size: 6em; color: #00E35A;">
+					긍정대마왕 Fine
+					</h3>
+						<p style="color: #00E35A; margin-top: -25px; padding-right: 100px;"><br>
+						푸하하 - 어떤가요?<br>
+이렇게 바닥을 구불구불 미끌 젤리로 만드니 벌써 집에 도착했죠?!<br>
+조금 미끄러우니 조심하시고! 아차차.. 넘어질 줄은 몰랐어요..<br>
+그래도 재밌는 여행이였죠?!<br><br>
+
+요즘 통 재밌는 생각이 나질 않는다면 내가 숨어서 도와줄게요!!<br>
+
+지겨운 출퇴근길도 늘 재밌는 상상의 나라로!<br>
+온세상이 재밌는 놀이기구!<br>
+
+						</p>
+
+
+						<p style="color:black; margin-top: 150px; margin-left: 100px;">
+							길이 젤리로 변하는 바람에 넘어질뻔했잖아!<br>
+							그래도 너랑 있으면 출퇴근 길이<br>
+							심심할 틈은 없겠다!<br>
+						</p>
+
+						<h3 style="margin-top:15vh; margin-left: 100px;font-size: 4em; line-height: 80px; color: #00E35A;">
+							그럼요 당연하죠!
+						</h3>
+			</div>
+
+			<div>
+				<img src="kiki-back.svg" style="width:1720px; margin-top:-7px;">
+			</div>
+	</section>
+
+
+	<section class="section-black">
+		<div class="text-center" style="font-size: 100%; color: #00E35A;">
+			<h3 style="font-size: 4em; line-height: 100px; margin-top: 100px;">참고로	 마지막 친구는 항상<br>당신이 가장 좋아하던 공원에 있어요!</h3>
+			<div>
+			<a class="button" href="mola/index.html">> 공원을 떠올려보기</a>
+			</div>
+			<div>
+			<a class="button" href="../../../../index.html">> 어른으로 돌아가기</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer style="height: 400px;">
+	</footer>
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

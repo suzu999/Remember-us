@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remember us</title>
+	
+
+   		<link href="@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');">
+	<style type="text/css">
+		link href="@font-face {
+    				font-family: 'SangSangShinb7';
+    				src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+   					font-weight: normal; font-style: normal;}
+
+		#ground-hover{
+			display: inline-block;
+			width: 1720px;
+			height: 800px;
+			background: url('ground-grayscale.jpg') no-repeat;
+		}
+
+
+		#ground-hover:hover{
+			background: url('ground-hover.jpg') no-repeat;
+		}
+
+		a{
+			font-size: 30px;
+			background: none;
+			width: 50px; height: 50px;
+			text-decoration: none;
+			color: white;
+			float: left;
+			margin-left: 50px; margin-right: 50px;
+			padding-top: 10px;
+		}
+			
+
+		a:hover{ 
+			color: #FF86FF;
+			transition: all 0.3s;
+		}
+
+		.char a{
+			font-size: 60px;
+			background: none;
+			width: 50px; height: 50px;
+			text-decoration: none;
+			color: white;
+		
+			margin-left: 100px; margin-right: 70px;
+		}
+
+		.char a:hover{ 
+			color: #FF86FF;
+			transition: all 0.3s;
+		}
+
+		body{margin:0;background: black;}
+		section{width: 1720px;}
+		a,h3{font-family: 'SangSangShinb7', sans-serif;}
+		body, h1, h2, p, div, ul, li{font-family: NanumSquare, sans-serif; margin: 0; padding: 0;}
+
+		h2{ font-size: 40px; margin-top: 30px; line-height: 55px;}
+		h3{font-size: 35px; margin-top: 30px; line-height: 55px;}
+		p{font-size: 24px;  margin-top: 30px; line-height: 40px;}
+		header{height: 60px;}
+		nav{float: right;padding-right: 50px;}
+		div{margin: 0px; padding: 0px;}
+
+		.small{font-size: 20px; margin-top: 30px; line-height: 35px;}
+		.div-size{height: 1274px;}
+		.row{width: 1200px; margin: auto;}
+		.row2{width: 1200px; margin: auto; margin-bottom: 100px;}
+		.h-400{height: 400px }
+
+	
+		.section-bg1{width: 1920px; padding: 0px; margin: 0px;}
+		.section-about{width: 1200px; margin: auto; height: 500px; padding: 0px 0px;}
+		.section-user{width: 1200px; margin: auto; height: 400px; display: flex; padding: 0px 0px; margin-top: 100px;}
+		.section-top{height: 1300px;}
+		.section-back{width: 1400px}
+		.secion-end{margin: 0px; padding: 0px;height: 40px;}
+		.section-img{width: 100vw; height: 220vh;background: none;}
+		.section-img1{width: 10vw; height: 100vh;background: none;}
+		.section-black{width: 100vw; height: 25vh;background: black;}
+
+
+		.col-1{width: 690px; background: black; margin: 0px 5px;}
+		.col-2{width: 790px; background: black; margin: 0px 5px;}
+		.col-3{width: 890px; background: black; margin: 0px 5px;}
+		.col-4{width: 990px; background: black; margin: 0px 5px;}
+		.col-5{width: 1090px; background: black; margin: 0px 5px;}
+		.col-6{width: 1190px; background: black; margin: 0px 5px;}
+		.text-white{color: white;}
+		.text-gray{color: lightgray;}
+		.text-center{text-align: center;}
+		.user1-img-size{display: block; width: 230px; margin: auto;}
+
+	
+		.color-overlay{
+			width: 100%;
+			height: 100%;
+			background:  linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1));background-repeat: no-repeat;}
+
+
+	
+       		.back {
+       			background: url('ground-light.jpg');
+               		width:1720px;
+                	background-position: center;
+                	background-size: 100% auto;
+                	background-attachment: fixed; 
+                }
+
+                
+		.back1:hover {
+			background: url('ground-grayscale.jpg');
+             		width:1720px;
+               		background-position: center;
+               		background-size: 100% auto;
+               	}
+
+
+        	.back-open-eye {
+        		background: url('open-eye.jpg');
+              		width: 1720px;
+                	background-position: center;
+                	background-attachment: fixed;
+        		background-size: 600px;
+        		background-repeat: no-repeat; 
+        	}
+
+        	.back-close-eye {
+        		background: url('close-eye.jpg');
+                	width: 1720px;
+               		background-position: center;
+               		background-attachment: fixed;
+        		background-size: 600px;
+        		background-repeat: no-repeat; 
+        	}
+
+
+        	.back4 {
+        		background: url('');
+               		background-size: cover;
+                	background-attachment: fixed;
+                }
+
+        	.end {
+        		width: 1720px; height: 100px;
+        	}
+
+        	.lb-wrap {
+  			width: 50%;
+  			margin: 10px auto;
+  			position: relative;
+		}
+		.lb-wrap img {
+  			width: 1720px;
+  			margin-left: -300px;
+
+		}
+
+		.lb-text {
+  			padding: 10px 20px;
+  			border-radius: 10px;
+  			text-align: center;
+  			position: absolute;
+  			margin-left: -310px;
+ 			top: 45%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			}
+
+
+
+
+		#back-ground-grayscale {
+				background-image: linear-gradient(180deg,  rgba(0,0,0,0) 50% ,rgba(0,0,0,1)100%), url(ground-grayscale.jpg); background-repeat: no-repeat;
+				width: 1720px;
+				height: 1400px; /* 섹션 총 넓이 */
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+				background-attachment: fixed;	
+				
+		}
+
+		#back-ground-grayscale:hover {
+				background-image: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1)100%), url(ground-hover.jpg); background-repeat: no-repeat;
+				width: 1720px;
+				height: 1400px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 100px;
+				background-attachment: fixed;	
+		}
+
+		  .footer_image {
+   				 position: relative;
+  		}
+ 		 .footer_image_text {
+    				position: absolute;
+    				top: 50%;
+    				left: 50%;
+    				transform: translate( -50%, -50% );
+   				color: black;
+   				margin-bottom: 30px;
+  		}
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<section class="section-top" style="position: relative;">
+		<header class="bg-header" style="position: absolute;">
+		<div class="button">
+			<nav>
+				<a href="#1">about</a>
+				<a href="#2">story</a>
+				<a href="#3">get</a>
+			</nav>
+		</div>
+	</header>
+		<div class="div-size">
+			<img src="bg.jpg" style="width: 1720px;">
+		</div>
+	</section>
+
+
+	<section class="section-about" id="1">
+		<div class="row">
+			<div class="col-6 h-400 text-white" >
+				<h2>어른이 되면서 어느 순간<br>무서워진게 많은 어른이들에게</h2>
+						<p class="text-white">Remember us는  조금 철이 없어도 용감무쌍하던 어린시절로 돌아가고싶은 여러분을 위해<br> 
+						어린시절 상상 속에 늘 함께하던 친구들을 소환해드립니다. <br> 다섯 친구들을 모두 떠올리고 나면 새로운 도전도 정글짐 위를 올라가는 것처럼 쉬워지지 않을까요?  <Br> 걱정이 많은 어른이라면 Remember us를 통해 잊고 지내던 기억 속 친구들을 만나고 용기를 얻어보세요. </p>
+				<p class="text-gray">Tip. 어린시절 친구들은 여러분의 기억저편 추억의 장소에 숨어있기 때문에 눈을 꼭 감고 장소를 떠올리면 만날 수 있습니다.</p>
+				</div>
+			</div> 
+		</section>
+
+
+
+	<section class="section-user">
+		<div class="col-2">
+			<img class="user1-img-size "src="user1.jpg">
+			<p class="text-center text-white">새로운 직장도 학교도 늘<br>걱정이 앞서는 어른이</p>
+		</div>
+
+		<div class="col-2">
+			<img class="user1-img-size "src="user2.jpg">
+			<p class="text-center text-white">기쁘고 슬픈 감정을 맘껏<br>표현하기 어려워진 어른이</p>
+		</div>
+
+		<div class="col-2">
+			<img class="user1-img-size "src="user3.jpg">
+			<p class="text-center text-white">작은 지적에도 혼난 것 처럼<br>주눅이 쉽게 드는 어른이 </p>
+		</div>
+	</section>
+
+
+	<section class="row" id="2">
+		<div style="margin-bottom: 100px;">
+			<img src="arrow.svg" style="height: 500px; margin-left: 60vh; margin-top: 100px;">
+			<p class="text-white text-center">
+				여러분의 기억 속의 다섯명의 친구들을 만나보세요<br> 아래의 이름을 누르면 동심의 이야기가 펼쳐집니다!
+			</p>
+
+		</div>
+		<div class="char" style="align-content: center; font-size: 5em;" >
+		<div>
+			<a href="bibi/index.html">BiBi</a>
+		</div>
+		
+		<div>
+			<a href="bibi/nayo/index.html">Nayo</a>
+		</div>
+		
+		<div>
+			<a href="bibi/nayo/fine/index.html">Fine</a>
+		</div>
+
+		<div>
+			<a href="bibi/nayo/fine/kiki/index.html">KiKi</a>
+		</div>
+
+		<div>
+			<a href="bibi/nayo/fine/kiki/mola/index.html">Mola</a>
+		</div>
+		</div>
+
+
+	</section>
+
+	<section class="row" style="margin-top: 500px;" id="3">
+		<h2 class="text-white text-center">
+				걱정이 많은 어른이들을 위한 동심 찾기 프로젝트
+			</h2>
+			<h3 class="text-white text-center" style="font-size: 5em;">
+				Remember us 
+			</h3>
+	<div>
+		<p class="text-white text-center" >
+				고민에 맞는 Remember us 친구들을 소장해보세요!
+			</p>
+	</div>
+	<div>
+		<img src="card.svg" style="width: 1200px; margin-top: 150px;">
+	</div>	
+
+	</section>	
+
+	
+
+	
+
+	<footer style="height: 300px; margin-top: 100px;">
+		<div class="footer_image">
+      		<img src="footer.jpg" width="100%" height="300px">
+      		<h3 class="footer_image_text" style="font-size: 35px;">Remember us</h3>
+
+   		<p class="footer_image_text" style="font-size:20px; margin-top:80px;">Remember Us Copyright c SUZU All Rights Reserved</p>
+
+</div>
+	</footer>
+
+
+
+	
+
+</body>
+</html>
